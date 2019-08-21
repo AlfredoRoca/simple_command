@@ -20,6 +20,10 @@ module SimpleCommand
       end
     end
 
+    def messages
+      self
+    end
+
     def full_messages
       map { |attribute, message| full_message(attribute, message) }
     end
