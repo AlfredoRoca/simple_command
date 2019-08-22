@@ -23,6 +23,7 @@ module SimpleCommand
     def messages
       self
     end
+    alias :errors :messages
 
     def full_messages
       map { |attribute, message| full_message(attribute, message) }
